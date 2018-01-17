@@ -1,0 +1,32 @@
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+
+       root /home/yogesh/Downloads/nginx-1.10.1/html/theANGU.github.io
+
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name _;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+
+#errr page 404
+error_page 404 /404.html;
+location = /404.html{
+root/home/yogesh/Downloads/nginx-1.10.1/html/theANGU4.gihub.io;
+internal;
+
+
+
+
+#error page 50
+error_page 50 505 504 504/ 50x.html;
+location = /50x.html{
+root /home/yogesh/Downloads/nginx-1.10.1/html/theANGU$.github.io;
+internal;
+/home/yogesh/Downloads/nginx-1.10.1/html
+
+}
+}
