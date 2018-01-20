@@ -1,0 +1,123 @@
+
+
+
+
+
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+
+       root /home/yogesh/Downloads/nginx-1.10.1/html/theANGU.github.io
+
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name _;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+
+#errr page 404
+error_page 404 /404.html;
+location = /404.html{
+root/home/yogesh/Downloads/nginx-1.10.1/html/theANGU4.gihub.io;
+internal;
+
+
+
+
+#error page 50
+error_page 50 505 504 504/ 50x.html;
+location = /50x.html{
+root /home/yogesh/Downloads/nginx-1.10.1/html/theANGU$.github.io;
+internal;
+/home/yogesh/Downloads/nginx-1.10.1/html
+
+}
+}
+
+
+
+
+steps for an server block 
+
+
+
+1 created first two directly parent like inde.html or the id or apliation 
+2. use $USER FOR CREAT CONTENT IN DIRECTLY 
+3.USING COMMAND FOR $SUDO  CHMOD -755 /VAR/WWW/ 
+4.CREATED SAMPLE PAGES LIKE INDEX.HTML ( IN CASE 404.HTML>
+USING $NANO /VAR/WWW/"NAME OF THE SITE "/HTML/INDEX.HTML
+5.THE 404.HTML AND 50X INDEX.HTML 
+THIS ARE SET TO ERROR 
+8
+CREATED FIRST SERVER BLOCK FILE 
+$SUDO CP/ETC/NGINX /SITES-AVAILABLE /DEFAULT /ETC/NIGNX/SITES-AVIALALE/"NAME OF APPLIATION"
+LIKE $SUDO NANO
+
+
+FIRST SERVER {
+}
+GOT I CREATED SIR 
+SECOND LISTEN 80 FOR SITES 
+
+THIRD CREATED BLOCK FOR ERROR FILE 
+{
+}
+USING COMMANDS FOR ERROR  X
+{}
+
+
+
+ NOW  
+    sudo ln -s /etc/nginx/sites-available/first server /etc/nginx/sites-enabled/
+    sudo ln -s /etc/nginx/sites-available/server error /etc/nginx/sites-enabled/
+
+
+using this enabeld the block in localhost xx
+
+
+open conf file for removing #server_names_hash_bucket_size64;
+command xx
+
+
+save it 
+test file using 
+sudo nginx -t 
+
+
+sudo systemctl restart nginx
+for restrart
+
+
+
+
+stage 
+
+
+to modilying using application user naem 
+
+
+sudo nano /etc/hosts
+for port and iP addresses xx
+
+server block it set using error pages for aplliction 
+
+like route conf in angualr to show pages 404.html and 50x.html 
+and localhost xx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
